@@ -6,32 +6,32 @@
 
 :root {
     /* Dark Theme Variables */
-    --bg-color: #1f2937;
-    --text-color: #e5e7eb;
-    --card-bg: rgba(31, 41, 55, 0.8);
-    --card-part-bg: #1f2937;
-    --section-bg: #111827;
-    --accent-color: #60a5fa;
-    --gradient: linear-gradient(90deg, #7c3aed, #4c1d95);
-    --btn-primary: linear-gradient(45deg, #ec4899, #f472b6);
-    --btn-secondary: linear-gradient(45deg, #3b82f6, #60a5fa);
-    --shadow: rgba(0, 0, 0, 0.4);
-    --hover-shadow: rgba(0, 0, 0, 0.5);
+    --bg-color: #1e1e2e;
+    --text-color: #cdd6f4;
+    --card-bg: rgba(30, 30, 46, 0.8);
+    --card-part-bg: #2a2a3c;
+    --section-bg: #181825;
+    --accent-color: #89b4fa;
+    --gradient: linear-gradient(90deg, #cba6f7, #f38ba8);
+    --btn-primary: linear-gradient(45deg, #f9e2af, #f5c2e7);
+    --btn-secondary: linear-gradient(45deg, #a6e3a1, #94e2d5);
+    --shadow: rgba(0, 0, 0, 0.5);
+    --hover-shadow: rgba(0, 0, 0, 0.7);
 }
 
 body.light-theme {
     /* Light Theme Variables */
-    --bg-color: #f5f7fa;
-    --text-color: #333;
-    --card-bg: rgba(255, 255, 255, 0.8);
-    --card-part-bg: #f9fafb;
-    --section-bg: #fff;
-    --accent-color: #3b82f6;
-    --gradient: linear-gradient(90deg, #3b82f6, #1e40af);
-    --btn-primary: linear-gradient(45deg, #f472b6, #ec4899);
-    --btn-secondary: linear-gradient(45deg, #60a5fa, #3b82f6);
-    --shadow: rgba(0, 0, 0, 0.1);
-    --hover-shadow: rgba(0, 0, 0, 0.2);
+    --bg-color: #f5f5f5;
+    --text-color: #1c2526;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --card-part-bg: #e8ecef;
+    --section-bg: #ffffff;
+    --accent-color: #ff6b6b;
+    --gradient: linear-gradient(90deg, #74c7ec, #a6e3a1);
+    --btn-primary: linear-gradient(45deg, #ffccbc, #f28cb1);
+    --btn-secondary: linear-gradient(45deg, #94e2d5, #74c7ec);
+    --shadow: rgba(0, 0, 0, 0.15);
+    --hover-shadow: rgba(0, 0, 0, 0.25);
 }
 
 body {
@@ -56,6 +56,10 @@ body {
     z-index: 1000;
 }
 
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
 .sidebar-header {
     display: flex;
     justify-content: space-between;
@@ -70,7 +74,6 @@ body {
 }
 
 .hamburger {
-    display: none;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -91,7 +94,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ddd6fe;
+    color: #f5c2e7;
 }
 
 .theme-toggle {
@@ -112,6 +115,11 @@ body {
 .main-content {
     margin-left: 250px;
     padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.main-content.full {
+    margin-left: 0;
 }
 
 section {
@@ -120,12 +128,11 @@ section {
     margin: 0 auto;
     text-align: center;
     background: var(--section-bg);
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 4px 15px var(--shadow);
 }
 
 #home {
-    margin-top: 0;
     background: var(--gradient);
     color: #fff;
     padding: 80px 12px;
@@ -173,19 +180,24 @@ section {
     font-weight: 600;
     font-size: 0.85rem;
     box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.3), 0 3px 8px var(--shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     touch-action: manipulation;
 }
 
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.3), 0 5px 12px var(--hover-shadow);
+    background: linear-gradient(45deg, #f5c2e7, #f9e2af);
 }
 
 .btn-secondary {
     background: var(--btn-secondary);
     padding: 6px 16px;
     font-size: 0.8rem;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(45deg, #74c7ec, #94e2d5);
 }
 
 .unit-container {
@@ -228,11 +240,12 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .part-card:hover {
     transform: scale(1.05);
+    background: linear-gradient(45deg, var(--card-part-bg), #585b70);
 }
 
 .part-card span {
@@ -292,6 +305,7 @@ footer p {
         top: 0;
         left: 0;
         transform: translateX(-100%);
+        z-index: 1000;
     }
 
     .sidebar.active {

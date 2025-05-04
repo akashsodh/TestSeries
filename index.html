@@ -8,88 +8,95 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
             <div class="logo">RSMSSB Librarian Test Series</div>
             <div class="hamburger">☰</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#test-series">Test Series</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Home Section -->
-    <section id="home">
-        <div class="home-content">
-            <h1>RSMSSB Librarian Test Series</h1>
-            <p>Excel in your exams with our expertly designed test series.</p>
-            <a href="#test-series" class="btn">Start Now</a>
         </div>
-    </section>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#test-series">Test Series</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="theme-toggle">
+                <span id="themeIcon" class="theme-icon">🌙</span>
+                <span class="theme-text">Toggle Theme</span>
+            </li>
+        </ul>
+    </div>
 
-    <!-- Test Series Section -->
-    <section id="test-series">
-        <h2>Test Series</h2>
-        <div class="unit-container">
-            <!-- Unit 1 -->
-            <div class="unit-card">
-                <h3>Unit 1: General Knowledge</h3>
-                <div class="part-grid">
-                    <div class="part-card"><span>Part 1</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 2</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                </div>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Home Section -->
+        <section id="home">
+            <div class="home-content">
+                <h1>RSMSSB Librarian Test Series</h1>
+                <p>Excel in your exams with our expertly designed test series.</p>
+                <a href="#test-series" class="btn">Start Now</a>
             </div>
-            <!-- Unit 2 -->
-            <div class="unit-card">
-                <h3>Unit 2: Library Science</h3>
-                <div class="part-grid">
-                    <div class="part-card"><span>Part 1</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 2</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 3</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 4</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 5</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 6</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 7</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                </div>
-            </div>
-            <!-- Unit 3 -->
-            <div class="unit-card">
-                <h3>Unit 3: Reasoning</h3>
-                <div class="part-grid">
-                    <div class="part-card"><span>Part 1</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 2</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 3</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 4</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 5</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 6</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 7</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                    <div class="part-card"><span>Part 8</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                </div>
-            </div>
-            <!-- Unit 4 -->
-            <div class="unit-card">
-                <h3>Unit 4: Computer Knowledge</h3>
-                <div class="part-grid">
-                    <div class="part-card"><span>Part 1</span><a href="#" class="btn btn-secondary">Take Test</a></div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:akashsodhmamana@gmail.com">akashsodhmamana@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/AkashSodh">AkashSodh</a></p>
-    </section>
+        <!-- Test Series Section -->
+        <section id="test-series">
+            <h2>Test Series</h2>
+            <div class="unit-container">
+                <!-- Unit 1 -->
+                <div class="unit-card">
+                    <h3>Unit 1: General Knowledge</h3>
+                    <div class="part-grid">
+                        <div class="part-card"><span>Part 1</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 2</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                    </div>
+                </div>
+                <!-- Unit 2 -->
+                <div class="unit-card">
+                    <h3>Unit 2: Library Science</h3>
+                    <div class="part-grid">
+                        <div class="part-card"><span>Part 1</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 2</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 3</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 4</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 5</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 6</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 7</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                    </div>
+                </div>
+                <!-- Unit 3 -->
+                <div class="unit-card">
+                    <h3>Unit 3: Reasoning</h3>
+                    <div class="part-grid">
+                        <div class="part-card"><span>Part 1</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 2</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 3</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 4</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 5</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 6</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 7</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                        <div class="part-card"><span>Part 8</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                    </div>
+                </div>
+                <!-- Unit 4 -->
+                <div class="unit-card">
+                    <h3>Unit 4: Computer Knowledge</h3>
+                    <div class="part-grid">
+                        <div class="part-card"><span>Part 1</span><a href="#" class="btn btn-secondary">Take Test</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Akash Sodh. All rights reserved.</p>
-    </footer>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:akashsodhmamana@gmail.com">akashsodhmamana@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/AkashSodh">AkashSodh</a></p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 Akash Sodh. All rights reserved.</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

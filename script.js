@@ -8,6 +8,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Hamburger menu toggle for mobile
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
 // Add fade-in effect on scroll
 const sections = document.querySelectorAll('section');
 const observer = new IntersectionObserver(entries => {

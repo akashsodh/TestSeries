@@ -8,12 +8,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Hamburger menu toggle for mobile
-const hamburger = document.querySelector('.hamburger');
-const sidebar = document.querySelector('.sidebar');
+// Sidebar toggle for both mobile and desktop
+const hamburger = document.querySelector('#hamburger');
+const sidebar = document.querySelector('#sidebar');
+const mainContent = document.querySelector('#main-content');
 
 hamburger.addEventListener('click', () => {
     sidebar.classList.toggle('active');
+    sidebar.classList.toggle('hidden');
+    mainContent.classList.toggle('full');
 });
 
 // Theme toggle functionality

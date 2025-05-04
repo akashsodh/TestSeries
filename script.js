@@ -10,10 +10,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Hamburger menu toggle for mobile
 const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+const sidebar = document.querySelector('.sidebar');
 
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    sidebar.classList.toggle('active');
+});
+
+// Theme toggle functionality
+const themeToggle = document.querySelector('.theme-toggle');
+const themeIcon = document.querySelector('#themeIcon');
+const body = document.body;
+
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-theme');
+    if (body.classList.contains('light-theme')) {
+        themeIcon.textContent = '☀️';
+    } else {
+        themeIcon.textContent = '🌙';
+    }
 });
 
 // Add fade-in effect on scroll

@@ -467,12 +467,11 @@ header {
 
 #sidebar {
   width: 250px;
-  padding: 10px;
-  background-color: #ffffff;
+  padding: 20px 10px;
+  background: linear-gradient(to bottom, #667eea, #764ba2);
   border-radius: 0 8px 8px 0; /* यदि बाईं ओर चिपका हो */
-  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.1); /* थोड़ी नरम और फैली हुई शैडो */
-  /* YOUR_HEADER_HEIGHT को हेडर की वास्तविक ऊंचाई से बदलें (लगभग 5.2rem या 84px) */
-  height: calc(100vh - 84px);
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);  /* YOUR_HEADER_HEIGHT को हेडर की वास्तविक ऊंचाई से बदलें (लगभग 5.2rem या 84px) */
+  height: 100%;
   overflow-y: auto; /* यदि कंटेंट ज्यादा हो */
   transition: transform 0.3s ease-in-out; /* स्लाइडिंग इफ़ेक्ट के लिए */
   transform: translateX(0); /* डिफ़ॉल्ट रूप से दृश्यमान */

@@ -458,12 +458,12 @@ header {
     flex-grow: 1;
     padding: 20px;
     transition: margin-left 0.3s ease-in-out; /* साइडबार के लिए जगह बनाने का इफ़ेक्ट */
-    /* margin-left: 0; -- जब साइडबार छिपा हो */
+    margin-left: 0; /*-- जब साइडबार छिपा हो */
 }
 
 /* वैकल्पिक: जब साइडबार दृश्यमान हो तो quiz-content को थोड़ा धक्का दें */
-/* #sidebar.sidebar-visible + #quiz-content {
-    margin-left: 250px;  -- यह निर्भर करता है कि आप लेआउट कैसे करते हैं
+#sidebar.sidebar-visible + #quiz-content {
+    margin-left: 250px;  /*-- यह निर्भर करता है कि आप लेआउट कैसे करते हैं
 } */
 
 

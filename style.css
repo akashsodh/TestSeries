@@ -13,7 +13,6 @@ body {
 header {
   background: #0056b3; /* पहले #333 था */ /* */
   color: #fff; /* */
-  padding: 1.5rem 1rem; /* पहले 1rem 0 था */ /* */
   text-align: center; /* */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -25,9 +24,7 @@ header h1 {
 }
 
 main {
-  padding: 1.5rem; /* पहले 1rem था */ /* */
-  max-width: 800px; /* */
-  margin: 20px auto; /* पहले auto था, टॉप मार्जिन जोड़ा गया */ /* */
+  max-width: 100%; /* */
   overflow: hidden; /* */
 }
 
@@ -41,8 +38,6 @@ h2 {
 #test-units-container .unit-card,
 .question-card {
   background: #fff; /* */
-  padding: 1.5rem; /* पहले 1rem था */ /* */
-  margin-bottom: 1.5rem; /* पहले 1rem था */ /* */
   border-radius: 8px; /* पहले 5px था */ /* */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07); /* पहले 0 0 10px rgba(0,0,0,0.1) था */ /* */
   border: 1px solid #dee2e6;
@@ -193,9 +188,7 @@ main > a:hover {
 #test-units-container p,
 #quiz-container p {
   font-size: 1.1rem;
-  color: #6c757d; /* मध्यम ग्रे रंग */
-  text-align: center;
-  padding: 20px;
+  color: #000000;
 }
 
 #sidebar h2,
@@ -291,7 +284,7 @@ main > a:hover {
 
 /* सबमिट बटन को विशेष स्टाइल दें */
 #submit-test-btn-sidebar {
-  background-color: #28a745; /* हरा रंग */
+  background-color: ##a72828; 
 }
 #submit-test-btn-sidebar:hover {
   background-color: #218838; /* गहरा हरा */
@@ -467,7 +460,7 @@ header {
 
 #sidebar {
   width: 250px;
-  padding: 20px 10px;
+  padding: 0px 0px;
   background: linear-gradient(to bottom, #667eea, #764ba2);
   border-radius: 0 8px 8px 0; /* यदि बाईं ओर चिपका हो */
   box-shadow: 2px 0 10px rgba(0,0,0,0.1);  /* YOUR_HEADER_HEIGHT को हेडर की वास्तविक ऊंचाई से बदलें (लगभग 5.2rem या 84px) */
@@ -476,7 +469,7 @@ header {
   transition: transform 0.3s ease-in-out; /* स्लाइडिंग इफ़ेक्ट के लिए */
   transform: translateX(0); /* डिफ़ॉल्ट रूप से दृश्यमान */
   position: fixed; /* सामग्री के ऊपर ओवरले करने के लिए */
-  top: 84px; /* हेडर की ऊंचाई */
+  top: 44px; /* हेडर की ऊंचाई */
   left: 0;
   z-index: 1000; /* अन्य सामग्री के ऊपर सुनिश्चित करने के लिए */
 }

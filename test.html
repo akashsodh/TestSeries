@@ -14,6 +14,10 @@
     <header>
       <button id="sidebar-toggle-btn"><i class="fas fa-bars"></i></button>
       <h1 id="test-title">Test</h1>
+      <div id="auth-status" style="margin-left: auto; margin-right: 20px; color: white;">
+        <span id="user-display">Guest</span> |
+        <button id="auth-button" class="header-auth-btn">Login</button>
+      </div>
     </header>
     <main>
       <div id="sidebar" class="sidebar-hidden">
@@ -52,6 +56,7 @@
           <div id="navigation-buttons">
             <button id="back-btn" style="display: none">Back</button>
             <button id="next-btn" style="display: none">Next</button>
+            <button id="clear-option-btn" style="display: none">Clear Selected Option</button>
           </div>
 
           <div id="result-container" style="display: none">
@@ -64,6 +69,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="js/test.js"></script>
   </body>
 </html>

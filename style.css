@@ -567,3 +567,261 @@ header {
 .header-auth-btn.logout:hover {
   background-color: #c82333;
 }
+/* ... (मौजूदा CSS कोड) ... */
+
+/* Header Auth Elements */
+.header-auth-btn {
+  background-color: #007bff; /* Login के लिए नीला */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+  margin-left: 10px; /* text से दूरी */
+}
+
+.header-auth-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Logout बटन के लिए अलग रंग */
+.header-auth-btn.logout {
+  background-color: #dc3545; /* Logout के लिए लाल */
+}
+
+.header-auth-btn.logout:hover {
+  background-color: #c82333;
+}
+
+/* Auth Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    max-width: 400px; /* Max width for larger screens */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    text-align: center;
+}
+
+.modal-content h2 {
+    color: #0056b3;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-content input[type="email"],
+.modal-content input[type="password"] {
+    width: calc(100% - 20px); /* Padding for input */
+    padding: 12px 10px;
+    margin: 0 auto; /* Center the input */
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.modal-content button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.modal-content .close-button {
+    color: #aaa;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content .close-button:hover,
+.modal-content .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.auth-toggle-text {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.auth-toggle-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-toggle-text a:hover {
+    text-decoration: underline;
+}
+
+/* My Library Section */
+#my-library-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f9ff;
+    border-radius: 8px;
+    border: 1px solid #cfe2ff;
+}
+
+#purchased-tests-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.purchased-card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.07);
+    border: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.purchased-card h3 {
+    color: #0056b3;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.purchased-card p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.purchased-card .start-test-btn {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    background: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.purchased-card .start-test-btn:hover {
+    background: #218838;
+}
+
+/* Referral Code Section */
+.referral-code-section {
+    display: flex;
+    flex-wrap: wrap; /* Smaller screens */
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+#referral-code-input {
+    flex-grow: 1; /* Take available space */
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    max-width: 250px; /* Limit max width */
+}
+
+#apply-referral-btn {
+    padding: 10px 20px;
+    background-color: #ffc107; /* Yellow for apply */
+    color: #212529;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#apply-referral-btn:hover {
+    background-color: #e0a800;
+    transform: translateY(-1px);
+}
+
+#referral-message {
+    width: 100%; /* Take full width */
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+/* Add style for the new buttons in loadTestUnits */
+.view-test-details-btn, .buy-test-btn {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    font-size: 0.9rem;
+    margin: 5px; /* Spacing between buttons */
+}
+
+.view-test-details-btn {
+    background-color: #6c757d; /* Grey */
+    color: white;
+}
+.view-test-details-btn:hover {
+    background-color: #5a6268;
+}
+
+.buy-test-btn {
+    background-color: #17a2b8; /* Info blue */
+    color: white;
+}
+.buy-test-btn:hover {
+    background-color: #138496;
+}
+
+
+/* ... (बाकी CSS कोड) ... */
